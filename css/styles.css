@@ -1,179 +1,193 @@
 :root {
-	--body-text-color: #434455;
-	--primary-color: #2e2f42;
-	--background-color: #ffffff;
-	--focus-hover-color: #404bbf;
-	--color-main-button: #4d5ae5;
-	--back-and-logo: #f4f4fd;
-	--accent-color: #e7e9fc;
+	--color-iris: #4d5ae5;
+	--color-ocean: #404bbf;
+	--color-navy-blue: #2e2f42;
+	--color-green: #31d0aa;
+	--color-slate: #434455;
+	--color-light-slate: #8e8f99;
+	--color-cornflower: #e7e9fc;
+	--color-cloud: #f4f4fd;
+	--color-navy-blue-modal: #2e2f42;
+	--color-grey: #2e2f42;
+	--color-white: #ffffff;
 }
 body {
-	font-family: Roboto, sans-serif;
-	color: var(--body-text-color);
+	font-family: roboto, sans-serif;
 }
-ul {
-	list-style: none;
-}
-a {
+.link {
 	text-decoration: none;
 }
-/*This Is LOGO*/
-.leftside-logo {
+.list {
+	list-style: none;
+}
+/*                main-class         */
+.main-logo {
 	font-family: Raleway, sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 1.33;
+	align-items: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: var(--color-main-button);
+	color: var(--color-iris);
 }
-.rightside-logo {
+.main-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--color-slate);
+}
+/*          header */
+.header-logo-right {
 	font-family: Raleway, sans-serif;
 	font-weight: 800;
 	font-size: 18px;
-	line-height: 1.16;
+	line-height: 1.33;
+	align-items: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: var(--primary-color);
+	color: var(--color-navy-blue);
 }
-/* THIS IS Header */
-.link:hover,
-.link:focus,
-.link:active {
-	color: var(--focus-hover-color);
-}
-.had {
-	background-color: var(--background-color);
-}
-.nav-list {
+.navigation-link {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: var(--primary-color);
+	color: var(--color-navy-blue);
 }
-.nav-list.current {
-	color: var(--accent-color);
+.navigation-link:hover,
+.navigation-link:focus,
+.navigation-link:active {
+	color: var(--color-ocean);
 }
-
-.mail,
-.telefone {
-	font-weight: 400;
+.current {
+	color: var(--color-cornflower);
+}
+.contacts-link {
 	font-style: normal;
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #434455;
+	color: var(--color-slate);
 }
-/* This IS HERO */
+.contacts-link:hover,
+.contacts-link:focus,
+.contacts-link:active {
+	color: var(--color-ocean);
+}
+/*           Hero         */
 .hero {
-	background: var(--primary-color);
+	background-color: var(--color-grey);
 }
 .hero-title {
+	font-style: normal;
 	font-weight: 700;
 	font-size: 56px;
-	line-height: 1.1;
+	line-height: 1.07;
+	text-align: center;
 	letter-spacing: 0.02em;
-	color: var(--background-color);
+	color: var(--color-white);
 }
 .hero-btn {
+	font-family: inherit;
+	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
+	align-items: center;
 	letter-spacing: 0.04em;
-	background-color: var(--color-main-button);
-	color: var(--background-color);
+	color: var(--color-white);
+	background-color: var(--color-iris);
 	cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus,
 .hero-btn:active {
-	background-color: var(--focus-hover-color);
+	background-color: var(--color-ocean);
+	color: var(--color-white);
 }
-.description-info {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-}
-.description-title {
+/*              main           */
+.about-title {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	color: var(--primary-color);
+	color: var(--color-navy-blue);
 }
-/* galery list */
-.back-comand {
-	background-color: var(--back-and-logo);
-}
-.comand .galery {
+
+.title-description {
+	font-style: normal;
 	font-weight: 700;
 	font-size: 36px;
-	line-height: 1.1;
+	line-height: 1.11;
+	text-align: center;
 	letter-spacing: 0.02em;
-	color: var(--primary-color);
+	text-transform: capitalize;
+	color: var(--color-navy-blue);
 }
-/* comand list */
-.comand-name {
+.team {
+	background-color: var(--color-cloud);
+}
+.team-name {
+	font-style: normal;
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
+
 	letter-spacing: 0.02em;
-	color: var(--primary-color);
+	color: var(--color-navy-blue);
 }
-.comand-position {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
+/*         Footer       */
+.footer {
+	background-color: var(--color-navy-blue);
 }
-.bot {
-	background-color: var(--primary-color);
-}
-.bot-remark {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-	color: var(--back-and-logo);
-}
-.anotherside-logo {
+.footer-rightside-logo {
+	font-family: Raleway, sans-serif;
+	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
-	line-height: 1.16;
+	line-height: 1.33;
+	align-items: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: var(--accent-color);
+	color: var(--color-cloud);
 }
-/* portfolio buttons */
-.menu-buttons {
+.footer-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--color-cornflower);
+}
+/*             portfolio       */
+.menu-btn {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
-	color: var(--color-main-button);
-	background-color: var(--back-and-logo);
+	color: var(--color-iris);
+	background-color: var(--color-cloud);
 	cursor: pointer;
 }
-.menu-buttons:hover,
-.menu-buttons:focus,
-.menu-buttons:active {
-	background-color: var(--focus-hover-color);
-	color: var(--background-color);
+.menu-btn:hover,
+.menu-btn:focus,
+.menu-btn:active {
+	color: var(--color-white);
+	background-color: var(--color-ocean);
 }
-/* Cards List */
-.cards-name {
+.menu-title-cards {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
-	color: var(--primary-color);
+	color: var(--color-navy-blue);
 }
-.cards-description {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-	color: var(--body-text-color);
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+	color: var(--color-ocean);
 }
