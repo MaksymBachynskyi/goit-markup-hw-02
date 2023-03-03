@@ -65,7 +65,8 @@ body {
 .current {
 	color: var(--color-cornflower);
 }
-.contacts-link {
+.main-link,
+.tel-link {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -73,9 +74,12 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--color-slate);
 }
-.contacts-link:hover,
-.contacts-link:focus,
-.contacts-link:active {
+.tel-link {
+	cursor: default;
+}
+.main-link:hover,
+.main-link:focus,
+.main-link:active {
 	color: var(--color-ocean);
 }
 /*           Hero         */
@@ -91,7 +95,7 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--color-white);
 }
-.hero-btn body {
+.hero-btn {
 	font-family: inherit;
 	font-style: normal;
 	font-weight: 500;
