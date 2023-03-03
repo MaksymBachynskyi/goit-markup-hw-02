@@ -65,8 +65,7 @@ body {
 .current {
 	color: var(--color-cornflower);
 }
-.main-link,
-.tel-link {
+.main-link {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
