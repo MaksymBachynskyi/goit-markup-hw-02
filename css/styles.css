@@ -15,7 +15,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color: #434455;
 }
-.link {
+. .link {
 	text-decoration: none;
 }
 .list {
@@ -49,6 +49,9 @@ body {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--color-navy-blue);
+}
+.current {
+	color: var(--color-cornflower);
 }
 .navigation-link {
 	font-weight: 500;
@@ -86,6 +89,7 @@ body {
 .hero {
 	background-color: var(--color-grey);
 }
+
 .hero-title {
 	font-style: normal;
 	font-weight: 700;
